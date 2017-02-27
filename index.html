@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+    <body>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>BAMPFA Email Signature Generator</h1>
+          <br /><br />
+          <div class="alert alert-info" role="alert">
+            <p>Welcome to the <strong>BAMPFA Email Signature Generator</strong>. Follow the steps below to generate your new email signature, and add it to your bMail account.</p><br />
+            <p>The short version is: Fill out the form below, copy and paste the resulting content into your bMail signature field.</p><br />
+            <p>The long version is below.</p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">1. Generate Signature</h3>
+            </div>
+            <div class="panel-body">
+              <p>Fill out and submit this form. Submitting will open a new browser tab with your email signature. After submission, come back to this tab for further instructions.</p>  
+              <hr />          
+              <form role="form" method="post" action="emailsig.php" target="_blank">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input class="form-control" id="name" name="name" placeholder="Name" value="" aria-describedby="name-help">
+                  <span id="name-help" class="help-block">Your full name as you want it to appear in your signature</span>
+                  <label for="jobTitle">Job title</label>
+                  <input class="form-control" id="jobTitle" name="jobTitle" placeholder="Job Title" aria-describedby="jobTitle-help">
+                  <span id="jobTitle-help" class="help-block">Whatever your job title is</span>
+                  <label for="phoneNumber">Phone Number</label>
+                  <input class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" aria-describedby="phoneNumber-help">
+                  <span id="phoneNumber-help" class="help-block">Your work phone number, in the format (123) 456-7890</span>
+                </div>
+                 <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+              </form>   
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">2. Copy Signature From New Tab</h3>
+            </div>
+            <div class="panel-body">
+              <p>The new tab that opened should look like this:</p>
+              <img width="600" src="http://archive.bampfa.berkeley.edu/emailsig/img/sig-example.png" /> 
+              <p>Make sure all of your information is correct. If you made any mistakes, close the tab, and resubmit the form above with the corrected information. </p>
+              <p>Once the signature looks good:</p>        
+              <ol type="A">
+                <li>Go to the Edit dropdown menu and click "Select All"</li>
+                <li>Go back to the Edit menu and select "Copy"</li>
+              </ol>              
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">3. Paste signature into bMail</h3>
+            </div>
+            <div class="panel-body">
+              <p>Sign in to bMail. Once you are in:</p>            
+              <ol type="A">
+                <li>Go to the gear icon in the corner and select the "settings" option</li>
+                <li>Scroll down to the "Signature" field.  Remove your old signature by highlighting everything in that field, and hitting delete</li>
+                <li>Paste your new signature into the field. It should look like this: <br /><br /><p><img width="600" src="http://archive.bampfa.berkeley.edu/emailsig/img/sig-in-bmail.png" /></p><br /></li>
+                <li>Assuming everything looks ok, scroll to the bottom of the page and press "Save Changes"</li>
+              </ol>              
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">4. Test</h3>
+            </div>
+            <div class="panel-body">
+              <p>Make sure your new signature looks good:</p>            
+              <ol type="A">
+                <li>Send yourself or a buddy an email</li>
+                <li>Look at your new signature in that email and see how good it looks</li>
+                <li>It looks so good</li>
+              </ol>                          
+            </div>
+          </div> 
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-danger" role="danger">
+          <strong>If it doesn't look so good, or something goes wrong:</strong><br />
+            <ul>
+              <li>Try again</li>
+              <li>Try again using the "Chrome" browser</li>
+              <li>Email the IT helpdesk at bampfahelpdesk@berkeley.edu with questions or issues</li>
+            </ul>
+          </div>  
+        </div>
+      </div>
+    </div> <!-- /container -->        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
